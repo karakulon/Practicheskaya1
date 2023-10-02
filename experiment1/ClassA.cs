@@ -8,7 +8,8 @@ namespace experiment1
 {
     internal class A
     {
+        private B? b;
         public string? PropertyA {  get; set; }
-        public B? GetB { get; set; }
+        public B? GetB { get => b; set { b = value; b.GetA = this; } }
     }
 }
