@@ -18,14 +18,14 @@ namespace experiment2
             Student student3 = new Student();
             Student student4 = new Student();
             Student student5 = new Student();
-            Group group = new Group { Direction = "Engeneer", Year = 2, Student = student1};
+            Group group = new Group { Direction = "Engineer", Year = 2, Student = student1};
             student1.Group = group;
             student2.Group = group;
             student3.Group = group;
             student4.Group = group;
             student5.Group = group;
             Console.WriteLine(group.ToString());
-
+            Console.WriteLine();
             // Эксперимент 3
 
             Console.WriteLine(student1.Group.ToString());
