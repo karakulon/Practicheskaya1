@@ -12,7 +12,6 @@ namespace experiment2
         public string? SurName {  get; set; }
         public Group? Group { get; set; }
 
-
         public override string ToString()
         {
             return Group.Direction + "  " + Group.Year + "\n" + Name + "  " + SurName;

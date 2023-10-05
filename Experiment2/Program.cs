@@ -13,21 +13,26 @@ namespace experiment2
         {
             // Эксперимент 2
 
-            Student student1 = new Student {Name = "Artem", SurName = "Cursedov"};
-            Student student2 = new Student();
-            Student student3 = new Student();
-            Student student4 = new Student();
-            Student student5 = new Student();
-            Group group = new Group { Direction = "Engineer", Year = 2, Student = student1};
-            student1.Group = group;
-            student2.Group = group;
-            student3.Group = group;
-            student4.Group = group;
-            student5.Group = group;
+            Group group = new Group { Direction = "Software engineer", Year = 2};
+            group.Students.Add(new Student());
+            group.Students.Add(new Student());
+            group.Students.Add(new Student());
+            group.Students.Add(new Student());
+            group.Students.Add(new Student());
             Console.WriteLine(group.ToString());
             Console.WriteLine();
+
             // Эксперимент 3
 
+            Group group2 = new Group { Direction = "Software developer", Year = 3};
+            Student student1 = new Student { Group = group2 };
+            Student student2 = new Student { Group = group2 };
+            Student student3 = new Student { Group = group2 };
+            group2.Students.Add(student1);
+            group2.Students.Add(student2);
+            group2.Students.Add(student3);
+            Console.WriteLine(group2.ToString());
+            Console.WriteLine();
             Console.WriteLine(student1.Group.ToString());
         }
     }
