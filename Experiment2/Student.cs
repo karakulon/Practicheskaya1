@@ -14,7 +14,11 @@ namespace experiment2
 
         public override string ToString()
         {
-            return Group.Direction + "  " + Group.Year + "\n" + Name + "  " + SurName;
+            return Name + "  " + SurName;
+        }
+        public Student Clone()
+        {
+            return new Student { Name = Name, SurName = SurName };
         }
     }
 }
