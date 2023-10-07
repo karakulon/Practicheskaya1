@@ -63,12 +63,15 @@ namespace experiment2
             Console.WriteLine("\n____________________________________\nExperiment: 6/1\n____________________________________\n");
 
             Group group5 = new Group { Direction = "Project Managment", Year = 6 };
-            Student student51 = new Student();
-            Student student52 = new Student();
-            Student student53 = new Student();
-            group5.Add(student51);
-            group5.Add(student52);
-            group5.Add(student53);
+            foreach (var s in new Student[]
+            {
+                new Student { Name = "Robert", SurName = "Bobert"},
+                new Student { Name = "Victor", SurName = "Rootcrop"},
+                new Student { Name = "Mister", SurName = "Twister" }
+            })
+            {
+                group5.Add(s);
+            }
             Group clone = group5.Clone();
             Console.WriteLine(clone.ToString());
 
