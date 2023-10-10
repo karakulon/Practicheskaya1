@@ -17,10 +17,10 @@ namespace experiment2
 
             Group group = new Group { Direction = "Software engineer", Year = 2};
             group.Add(new Student { Name = "Man", SurName = "Maanov" });
-            group.Add(new Student());
-            group.Add(new Student());
-            group.Add(new Student());
-            group.Add(new Student());
+            group.Add(new Student { Name = "Shadowfiend", SurName = "Razov" });
+            group.Add(new Student { Name = "Bounty", SurName = "Hunterov" });
+            group.Add(new Student { Name = "Crystal", SurName = "Maiden" });
+            group.Add(new Student { Name = "Phantom", SurName = "Assassin" });
             Console.WriteLine(group.ToString());
             Console.WriteLine();
 
@@ -29,8 +29,8 @@ namespace experiment2
 
             Group group2 = new Group { Direction = "Software developer", Year = 3};
             Student student1 = new Student { Name = "Chel", SurName = "Chelov" };
-            Student student2 = new Student();
-            Student student3 = new Student();
+            Student student2 = new Student { Name = "Naga", SurName = "Siren" };
+            Student student3 = new Student { Name = "Anti", SurName = "Maga"};
             group2.Add(student1);
             group2.Add(student2);
             group2.Add(student3);
@@ -43,8 +43,8 @@ namespace experiment2
 
             Group group3 = new Group { Direction = "Cyber security", Year = 4 };
             Student student41 = new Student { Name = "Cyber", SurName = "Securov" };
-            Student student42 = new Student();
-            Student student43 = new Student();
+            Student student42 = new Student { Name = "Sven", SurName = "Svenov"};
+            Student student43 = new Student { Name = "In'", SurName = "Voker"};
             group3.Add(student41);
             group3.Add(student42);
             group3.Add(student43);
